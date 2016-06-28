@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="GoLogin" class="com.action.GoLogin">
+			<result name="error" type="redirect">/Login.jsp</result>
+			<result name="success">/adminselect.jsp</result>
+			<result name="success1">/adminoperatedom.jsp</result>
+		</action>
+		<action name="deletestudent" class="com.action.DeleteStudent">
+			<result name="error" type="redirect">/adminoperate.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="addStudentdomitory" class="com.action.AddStudent_Domitory">
+			<result name="error" type="redirect">/Login.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="UpdateStudentdomitory" class="com.action.UpdateStudentDomitory">
+			<result name="error" type="redirect">/Login.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="selectStudentsByDom" class="com.action.SelectStduentsByDomitoryID">
+			<result name="error" type="redirect">/adminselect.jsp</result>
+			<result name="success">/selectallstu.jsp</result>
+		</action>
+		<action name="selectStudentsById" class="com.action.SelectStudentByID">
+			<result name="error" type="redirect">/adminselect.jsp</result>
+			<result name="success">/selectonestu.jsp</result>
+		</action>
+		<action name="selectStudentsBylikename" class="com.action.SelectStudentByNameLike">
+			<result name="error" type="redirect">/adminselect.jsp</result>
+			<result name="success">/selectallstu.jsp</result>
+		</action>
+		<action name="selectallStudentsBylogs" class="com.action.SelectAllLog">
+			<result name="error" type="redirect">/adminselect.jsp</result>
+			<result name="success">/selectlogstu.jsp</result>
+		</action>
+		<action name="selectalllogsStudentsByID" class="com.action.SelectLogByStudentID">
+			<result name="error" type="redirect">/adminselect.jsp</result>
+			<result name="success">/selectlogstu.jsp</result>
+		</action>
+		<action name="addloginfo" class="com.action.AddLogInfo">
+			<result name="error" type="redirect">/adminaddlog.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="deleteloginfo" class="com.action.DeleteLog">
+			<result name="error" type="redirect">/adminaddlog.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="addDom" class="com.action.AddDomitory">
+			<result name="error" type="redirect">/adminoperatedom.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+			<action name="updatadomdesc" class="com.action.UpdateDomitoryDesc">
+			<result name="error" type="redirect">/adminoperatedom.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+			<action name="addamin" class="com.action.AddAdminInfo">
+			<result name="error" type="redirect">/adminoperatedom.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+			<action name="deleteadmin" class="com.action.DeleteAdminInfo">
+			<result name="error" type="redirect">/adminoperatedom.jsp</result>
+			<result name="success">/index.jsp</result>
+		</action>
+		
+	</package>
+</struts>    

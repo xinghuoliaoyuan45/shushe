@@ -1,0 +1,10 @@
+http://localhost:8080/shushe/Login.jsp 登录页面
+http://localhost:8080/shushe/adminoperate.jsp 这是admin(宿舍管理员)对学生宿舍的增删改
+http://localhost:8080/shushe/adminaddlog.jsp 这是admin(宿舍管理员)对学生不归宿信息和的增加删除 
+http://localhost:8080/shushe/adminselect.jsp  这是admin(宿舍管理员)对学生宿舍的查询页面 
+
+
+http://localhost:8080/shushe/adminoperatedom.jsp 这是超级管理员的特权页面
+
+
+   
